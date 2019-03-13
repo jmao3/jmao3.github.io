@@ -6,7 +6,7 @@ border:#D0D2D3
 grey: #656666
 */
 body{
-  font-family: Calibre;
+  font-family: Calibre, Arial, Helvetica, sans-serif;
   background: #f1f2f2;
 }
 h1{
