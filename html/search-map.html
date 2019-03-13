@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test Webpage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar sticky-top navbar-tall">
+      <a class="navbar-brand align-middle px-3 py-2" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" class="zagat-logo-svg" width="120" height="60">
+          <g class="zagat-logo-paths d-inline" fill="#b70038">
+            <path d="M32.484 38.378l-1.768 3.612h1.768l1.076-2.152h8.685l1 2.152h1.844l-1.768-3.612H32.484"/>
+            <path d="M37.787 17.395L25.413 41.99h1.844l10.684-21.598L48.625 41.99h1.921L38.095 17.395h-.308M5.736 23.083v1.537h7.686l-9.07 17.063v.307h18.985v-1.46H6.735l9.3-17.447H5.737"/>
+            <path d="M5.736 20.162h15.295l-9.3 17.447h11.606v-1.537h-9.07l9.147-17.14v-.307H5.736v1.537M37.94 29.923l2 4.535h-4.074zm-4.226 5.765h8.377l-4.15-8.532zM74.68 28.155H60.845v1.46h12.298v.539c0 6.072-4.304 10.914-10.376 10.914-5.918 0-10.53-4.689-10.53-10.76 0-6.073 4.765-10.761 10.914-10.761 2.767 0 5.457.845 7.686 2.613l.692-1.46c-2.383-1.768-5.303-2.613-8.378-2.613-7.07 0-12.605 5.303-12.605 12.22 0 6.918 5.38 12.221 12.221 12.298 7.148 0 11.913-5.534 11.913-12.682v-1.768M108.269 23.083V41.99h1.614V24.62h5.764v-1.537h-7.378M97.662 24.62h5.764v17.37h1.615V23.083h-7.38v1.537M97.662 18.625h17.985v1.537H97.662z"/>
+            <path d="M63.151 24.235c2.076 0 3.997.769 5.534 2.23l.692-1.461c-1.614-1.46-3.843-2.306-6.226-2.306-4.304 0-7.609 3.305-7.609 7.61 0 4.38 3.151 7.762 7.225 7.762 3.843 0 6.533-2.382 6.764-5.995h-8.686v1.46h6.841c-.692 1.999-2.613 3.075-4.919 3.075-3.151 0-5.61-2.767-5.61-6.303 0-3.458 2.612-6.072 5.994-6.072M86.901 17.395L74.527 41.99h1.844l10.684-21.598L97.74 41.99h1.921L87.21 17.395H86.9"/>
+            <path d="M81.598 38.378L79.83 41.99h1.768l1.076-2.152h8.685l1 2.152h1.844l-1.768-3.612H81.598M87.055 29.923l1.998 4.535H84.98zm-4.227 5.765h8.378l-4.15-8.532z"/>
+          </g>
+        </svg>
+        <h5 class="gourmet d-inline">Gourmet</h5>
+      </a>
+      <form class="form-inline">
+        <input class="form-control mb-0" type="search" placeholder="Find a great place near you">
+      </form>
+      <a class="nav-link ml-auto" href="#">WHAT'S TRENDING</a>
+      <a class="nav-link" href="#">ASK A QUESTION</a>
+      <a class="nav-link" href="#">WRITE A STORY</a>
+      <a class="nav-link" href="#">LOG IN/SIGN UP</a>
+      <nav class="navbar subnav">
+        <a href="search-post.html" class="nav-link subnav-link">Post</a>
+        <a href="search-map.html" class="nav-link subnav-link subnav-link-active">Map</a>
+      </nav>
+      <nav class="navbar filter">
+        <div class="filter-box">
+          <h5 class="filter-text">SORT BY - Relevance</h5>
+        </div>
+        <div class="filter-box">
+          <h5 class="filter-text filter-blank">FILTERS</h5>
+        </div>
+      </nav>
+    </nav>
+
+    <!-- Page content -->
+    <div class="row">
+      <!-- Restaurant List -->
+      <div class="col-4">
+        <!-- Restaurant 1 -->
+        <div class="card restaurant-card">
+          <div class="row no-gutters">
+            <div class="col-4">
+              <a href="individual-restaurant.html">
+                <img class="card-image"src="../assets/image/restaurant1.jpg" alt="">
+              </a>
+            </div>
+            <div class="col p-4">
+              <a href="individual-restaurant.html">
+                <h4 class="mb-1 tracking">HIHO CHEESEBURGER</h4>
+              </a>
+              <h5 class="subscript mb-1">Burgers</h5>
+              <!-- restaurant score -->
+              <div class="row restaurant-score">
+                <div class="col-1 mr-1">
+                  <img class="zagat-circle"src="../assets/logo/circle.svg" alt="">
+                </div>
+                <div class="col">
+                  <p class="small-p">4.4</p>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="text-box-3">
+                <p class="small-p">Grass-fed Wagyu beef burgers and fresh-cut fries star at this casual counter-serve.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Restaurant 2 -->
+        <div class="card restaurant-card">
+          <div class="row no-gutters">
+            <div class="col-4">
+              <a href="individual-restaurant.html">
+                <img class="card-image"src="../assets/image/restaurant2.jpg" alt="">
+              </a>
+            </div>
+            <div class="col p-4">
+              <a href="individual-restaurant.html">
+                <h4 class="mb-1 tracking">PONO BURGER</h4>
+              </a>
+              <h5 class="subscript mb-1">Burgers</h5>
+              <!-- restaurant score -->
+              <div class="row restaurant-score">
+                <div class="col-1 mr-1">
+                  <img class="zagat-circle"src="../assets/logo/circle.svg" alt="">
+                </div>
+                <div class="col">
+                  <p class="small-p">4.4</p>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="text-box-3">
+                <p class="small-p">With its beachy vibe and surf-culture decor, this local burger chain draws fans craving a taste of the islands (the owner is from Hawaii). The organic beef, turkey and vegetarian patties are topped with sweet and savory combinations on soft buns, with hand-cut fries and onion rings on the side, thick shakes made with Strauss organic ice cream, and craft beer on tap.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Restaurant 3 -->
+        <div class="card restaurant-card">
+          <div class="row no-gutters">
+            <div class="col-4">
+              <a href="individual-restaurant.html">
+                <img class="card-image"src="../assets/image/restaurant3.jpg" alt="">
+              </a>
+            </div>
+            <div class="col p-4">
+              <a href="individual-restaurant.html">
+                <h4 class="mb-1 tracking">BURGER PARLOR</h4>
+              </a>
+              <h5 class="subscript mb-1">Burgers</h5>
+              <!-- restaurant score -->
+              <div class="row restaurant-score">
+                <div class="col-1 mr-1">
+                  <img class="zagat-circle"src="../assets/logo/circle.svg" alt="">
+                </div>
+                <div class="col">
+                  <p class="small-p">4.4</p>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="text-box-3">
+                <p class="small-p">These modern, brick-walled storefronts helmed by Joseph Mahon (ex Bastide) serve burgers with gourmet trimmings, including brioche buns, magical secret sauce and hand-cut fries, all washed down with local craft beer or a Cap'n Crunch milkshake.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Restaurant 4 -->
+        <div class="card restaurant-card">
+          <div class="row no-gutters">
+            <div class="col-4">
+              <a href="individual-restaurant.html">
+                <img class="card-image"src="../assets/image/restaurant4.jpg" alt="">
+              </a>
+            </div>
+            <div class="col p-4">
+              <a href="individual-restaurant.html">
+                <h4 class="mb-1 tracking">BURGER LOUNGE</h4>
+              </a>
+              <h5 class="subscript mb-1">Burgers</h5>
+              <!-- restaurant score -->
+              <div class="row restaurant-score">
+                <div class="col-1 mr-1">
+                  <img class="zagat-circle"src="../assets/logo/circle.svg" alt="">
+                </div>
+                <div class="col">
+                  <p class="small-p">4.4</p>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="text-box-3">
+                <p class="small-p">Tasty“ burgers ”you can feel good about eating“ are the m.o. behind this grass-fed chain with roots in San Diego that continues to pop up in trendy 'hoods around LA; the ”hip“ orange-and-chrome settings are staffed by a ”helpful“ counter crew, and ”fair" prices cap things off.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Restaurant 5 -->
+        <div class="card restaurant-card">
+          <div class="row no-gutters">
+            <div class="col-4">
+              <a href="individual-restaurant.html">
+                <img class="card-image"src="../assets/image/restaurant5.jpg" alt="">
+              </a>
+            </div>
+            <div class="col p-4">
+              <a href="individual-restaurant.html">
+                <h4 class="mb-1 tracking">IN-N-OUT BURGER</h4>
+              </a>
+              <h5 class="subscript mb-1">Burgers</h5>
+              <!-- restaurant score -->
+              <div class="row restaurant-score">
+                <div class="col-1 mr-1">
+                  <img class="zagat-circle"src="../assets/logo/circle.svg" alt="">
+                </div>
+                <div class="col">
+                  <p class="small-p">4.4</p>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="text-box-3">
+                <p class="small-p">SoCal's “iconic” hamburger-chain “institution” has “earned its reputation for quality” “at a fair price” with “addictive”, “made-fresh-to-order” burgers, “crispy” thick-cut fries and “classic” “rich” shakes (plus a “cool” secret menu that might be “even better” than the original); “perpetual drive-up lines” and “generic decor” aside, it's “wildly popular” bordering on “cult”-ish — good thing the “speedy”, “always-smiling” servers "keep things moving.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Map -->
+      <div class="col-8 p-0 map fix-on-page">
+        <img class="card-image"src="../assets/image/map.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
