@@ -10,7 +10,8 @@
 </head>
 <body>
   <div class="container-fluid">
-    <nav class="navbar sticky-top navbar-tall">
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top">
       <a class="navbar-brand align-middle px-3 py-2" href="index.html">
         <svg xmlns="http://www.w3.org/2000/svg" class="zagat-logo-svg" width="120" height="60">
           <g class="zagat-logo-paths d-inline" fill="#b70038">
@@ -23,19 +24,102 @@
         </svg>
         <h5 class="gourmet d-inline">Gourmet</h5>
       </a>
-      <form class="form-inline">
+      <form class="form-inline" action="search-post.html">
         <input class="form-control mb-0" type="search" placeholder="Find a great place near you">
       </form>
-
-      <a class="nav-link ml-auto" href="#">WHAT'S TRENDING</a>
+      <a class="nav-link ml-auto" href="index.html">WHAT'S TRENDING</a>
       <a class="nav-link" href="#">ASK A QUESTION</a>
-      <a class="nav-link" href="#">WRITE A STORY</a>
-      <a class="nav-link" href="#">LOG IN/SIGN UP</a>
-      <nav class="navbar subnav">
-        <a href="search-post.html" class="nav-link subnav-link subnav-link-active">Post</a>
-        <a href="search-map.html" class="nav-link subnav-link">Map</a>
-      </nav>
+      <a class="nav-link" href="#" data-toggle="modal" data-target="#story">WRITE A STORY</a>
+      <a class="nav-link" href="#" data-toggle="modal" data-target="#sign-in">LOG IN/SIGN UP</a>
     </nav>
+    <nav class="navbar subnav">
+      <a href="search-post.html" class="nav-link subnav-link subnav-link-active">Post</a>
+      <a href="search-map.html" class="nav-link subnav-link">Map</a>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="story" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog larger-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header p-0 my-2">
+            <h3>Best Restaurants Near the Santa Monica Pier</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="text-edit">
+              <i class="fas fa-bold"></i>
+              <i class="fas fa-italic"></i>
+              <i class="fas fa-list-ol"></i>
+              <i class="fas fa-list-ul"></i>
+              <i class="fas fa-image"></i>
+              <i class="fas fa-link"></i>
+            </div>
+            <form class="m-0 a-form" action="individual-story.html" method="post">
+              <input class="form-text form-paragraph">
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+              <!-- Modal -->
+              <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header p-0 m-0">
+                      <div class="logo-center">
+                        <img class="logo-resize" src="../assets/logo/rectangle.svg" alt="">
+                        <h3 class="logo-reposition gourmet d-inline">Gourmet</h3>
+                      </div>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h3 class="text-center">Log In</h3>
+    
+                      <form class="my-4">
+                        <input class="form-text" placeholder="Email">
+                      </form>
+                      <form class="my-4">
+                        <input class="form-text" placeholder="Password">
+                      </form>
+                      <button type="button" class="btn btn-primary btn-block log-in">
+                        <h3 class="m-0">Log In</h3>
+                      </button>
+                      <div class="row">
+                        <div class="col social-log-in">
+                          <a class="btn btn-block btn-social btn-facebook d-block">
+                            <i class="fab fa-facebook"></i>
+                            <h5 class="social-log-in-text my-1">Sign in with Facebook</h5>
+                          </a>
+                        </div>
+                        <div class="col social-log-in pr-0">
+                          <a class="btn btn-block btn-social btn-google d-block">
+                            <i class="fab fa-google"></i>
+                            <h5 class="social-log-in-text my-1">Sign in with Google</h5>
+                          </a>
+                        </div>
+                      </div>
+                      <h5 class="subscript text-center">
+                        <a href="sign-up.html">Sign Up with Email</a>
+                      </h5>
+                      <h5 class="subscript text-center">
+                        <a href="#">Forget Password?</a>
+                      </h5>
+                    </div>
+                    <div class="modal-footer p-0">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <!-- Navigation Ends Here -->
+
 
     <!-- Image Card -->
     <div class="card image-card">
@@ -214,5 +298,8 @@
       </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
